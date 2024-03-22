@@ -1,0 +1,5 @@
+Mlops for cars24
+
+https://medium.com/artificialis/building-a-hand-written-digit-recognition-web-app-with-tensorflow-8b51b0b95fdf
+
+https://cloud.google.com/architecture/minimizing-predictive-serving-latency-in-machine-learning
