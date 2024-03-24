@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import tensorflow as tf
 import sys
-sys.path.append('..')
+# sys.path.append('..')
 from src import model_inference
 import pickle
 import os
