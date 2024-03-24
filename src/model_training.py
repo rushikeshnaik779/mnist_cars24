@@ -43,13 +43,17 @@ class MnistTrain:
         self.model.fit(
             self.X_train,
             self.y_train,
-            epochs = 10,
+            epochs = 1,
             batch_size=256,
             validation_data = (self.X_test, self.y_test)
         )
 
     def model_save(self):
-        self.model.save("cnn_mymodel.h5")
+        import os
+        if not os.path.exists("models"):
+            os.mkdir("models")
+
+        self.model.save("./models/cnn_mymodel.h5")
         return self.model
 
 
