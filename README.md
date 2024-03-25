@@ -34,6 +34,6 @@ Below are the steps to run the webapp using docker image:
 run the app with server 
 docker run -d -p 8000:8000 my-fastapi-app 
 
-Run the below command in postman server to check the output
+Run the below command in postman server to check the output : localhost:8000/predict?data_path=data/test_single_instance.pkl
 ![Screenshot 2024-03-25 at 12 04 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/f786a13c-0a4d-4c1b-831a-c113f199e4b5)
 
