@@ -20,4 +20,20 @@ Folder Structure:
 - Dockerfile : it will help to containerize the application as mentioned in the above image.
 - main.py: file runs to trigger the training pipeline.
 - requirements.txt : file to install all the dependecies
-- resources.txt: this file to keep the track of discoveries that I have during the development.  
+- resources.txt: this file to keep the track of discoveries that I have during the development.
+
+Below are the steps to run the webapp using docker image: 
+- Clone the repository
+  
+![Screenshot 2024-03-25 at 12 01 13 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/efa4bd18-b40a-4d60-a0dd-f05469c97b93)
+
+- cd to mnist_cars24
+- start the docker server and build the docker image 
+ docker build -t my-fastapi-app .
+
+run the app with server 
+docker run -d -p 8000:8000 my-fastapi-app 
+
+Run the below command in postman server to check the output
+![Screenshot 2024-03-25 at 12 04 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/f786a13c-0a4d-4c1b-831a-c113f199e4b5)
+
