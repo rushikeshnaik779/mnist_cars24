@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from src import data_extraction
 from src import model_training
 from src.feature_engineering import MnistFEngineering
-from src import model_inference
 
 #
 (X_train, y_train), (X_test, y_test) = data_extraction.get_data()
@@ -25,7 +24,6 @@ model = train.run_training()
 
 # print(X_test[0].shape)
 import pickle
-import os
 import tensorflow as tf
 # ... (same code as before to select image and label)
 

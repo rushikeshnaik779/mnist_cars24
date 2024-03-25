@@ -53,7 +53,7 @@ class MnistTrain:
         if not os.path.exists("models"):
             os.mkdir("models")
 
-        self.model.save("./models/cnn_mymodel.h5")
+        self.model.save("../models/cnn_mymodel.h5")
         return self.model
 
 

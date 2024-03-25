@@ -2,7 +2,7 @@ from fastapi import FastAPI
 import tensorflow as tf
 import sys
 sys.path.append('..')
-from src import model_inference
+import api.model_inference as model_inference
 import pickle
 import os
 
@@ -24,7 +24,7 @@ async def root(data_path: str="rushikesh"):
 
     return {"predicted class": f"{predictions}"}
 
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("inference_api:app", host="0.0.0.0", port=8000, reload=True)
+#
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run("inference_api:app", host="0.0.0.0", port=8000, reload=True)
