@@ -49,3 +49,17 @@ Below are the steps to run the webapp using docker image:
 ```
 ![Screenshot 2024-03-25 at 12 04 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/f786a13c-0a4d-4c1b-831a-c113f199e4b5)
 
+- Kubernetes run the deployement and service
+```bash
+  kubectl apply -f fastapi-deployment.yaml                  
+  kubectl apply -f fastapi-service.yaml 
+```
+
+- Check the service
+  ```bash
+  minikube service fastapi-service
+  ```
+
+- ### ERROR: I was not able to run the pipeline with kuberneetes. 
+  
+
