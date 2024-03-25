@@ -24,16 +24,28 @@ Folder Structure:
 
 Below are the steps to run the webapp using docker image: 
 - Clone the repository
-  
+  ```bash
+  git clone 
+  ```
 ![Screenshot 2024-03-25 at 12 01 13 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/efa4bd18-b40a-4d60-a0dd-f05469c97b93)
 
-- cd to mnist_cars24
-- start the docker server and build the docker image 
- docker build -t my-fastapi-app .
+- Change the directory
+  ```bash
+  cd to mnist_cars24
+  ```
+  
+- Start the docker server and build the docker image
+  ```bash
+   docker build -t my-fastapi-app .
+   ```
+- Run the app with server 
+```bash
+  docker run -d -p 8000:8000 my-fastapi-app
+```
 
-run the app with server 
-docker run -d -p 8000:8000 my-fastapi-app 
-
-Run the below command in postman server to check the output : localhost:8000/predict?data_path=data/test_single_instance.pkl
+- Run the below command in postman server to check the output : 
+```url
+  localhost:8000/predict?data_path=data/test_single_instance.pkl
+```
 ![Screenshot 2024-03-25 at 12 04 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/f786a13c-0a4d-4c1b-831a-c113f199e4b5)
 
