@@ -60,6 +60,22 @@ Below are the steps to run the webapp using docker image:
   minikube service fastapi-service
   ```
 
-- ### ERROR: I was not able to run the pipeline with kuberneetes. 
-  
+- ### ERROR: I was not able to run the pipeline with kuberneetes.
+
+## MFLOW : 
+
+
+1. I tried to add mlflow, and register a model with the help of mlflow.
+2. Due to I am using it in the local env, I believe we can't leverage mlflow that much, but the cloud based env/databricks we will be able to use mlflow or like framework with full potential
+
+Screenshot of Mlflow Dashboard:
+### Experiments : Tried to log various parameters and metrics based on the mlflow param logging. 
+![Screenshot 2024-03-25 at 5 37 39 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/e8b96fac-a524-4e19-8f6f-233d2a1a5164)
+
+
+### Model Registry: 
+
+![Screenshot 2024-03-25 at 5 37 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/9a72cb99-05bc-4d93-88f3-ca8e45448a0d)
+
+
 
