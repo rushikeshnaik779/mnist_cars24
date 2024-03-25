@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rushikeshnaik/Desktop/cars24_mnist_digit/mnist_cars24/mlruns/0/55f09d3420144cd1ba61637c21bb11db/artifacts
+end_time: 1711350867205
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 55f09d3420144cd1ba61637c21bb11db
+run_name: luxuriant-owl-124
+run_uuid: 55f09d3420144cd1ba61637c21bb11db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711350851928
+status: 3
+tags: []
+user_id: rushikeshnaik

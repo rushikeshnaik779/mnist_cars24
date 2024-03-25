@@ -16,7 +16,7 @@ async def root(data_path: str="rushikesh"):
 
     infer = model_inference.MnistInfer(data)
     infer.inference_data_prep(data)
-    infer.load_model(model_path="../models/cnn_mymodel.h5")
+    infer.load_model(model_path="cnn_mymodel.h5")
     predictions = infer.predictions()
 
 

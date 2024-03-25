@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1711351118017
+current_stage: None
+description: null
+last_updated_timestamp: 1711351118017
+name: cnn_model
+run_id: null
+run_link: null
+source: ./model/2024-03-25 12:48:34.454890
+status: READY
+status_message: null
+storage_location: ./model/2024-03-25 12:48:34.454890
+user_id: null
+version: 1

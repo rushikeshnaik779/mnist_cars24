@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rushikeshnaik/Desktop/cars24_mnist_digit/mnist_cars24/mlruns/0/44af0a72cdc0425ca63bb65062756a2f/artifacts
+end_time: 1711351118018
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 44af0a72cdc0425ca63bb65062756a2f
+run_name: sneaky-toad-783
+run_uuid: 44af0a72cdc0425ca63bb65062756a2f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711351102344
+status: 3
+tags: []
+user_id: rushikeshnaik

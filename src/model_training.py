@@ -5,8 +5,9 @@ warnings.filterwarnings('ignore')
 from keras.optimizers import Adam
 from keras.losses import CategoricalCrossentropy
 from keras.metrics import CategoricalAccuracy
+import datetime
 
-
+import mlflow.tensorflow
 class MnistTrain:
     def __init__(self, X_train, y_train, X_test, y_test):
 
@@ -40,20 +41,30 @@ class MnistTrain:
 
 
     def model_training(self):
-        self.model.fit(
-            self.X_train,
-            self.y_train,
-            epochs = 1,
-            batch_size=256,
-            validation_data = (self.X_test, self.y_test)
-        )
+        with mlflow.start_run():
+            self.model.fit(
+                self.X_train,
+                self.y_train,
+                epochs = 1,
+                batch_size=256,
+                validation_data = (self.X_test, self.y_test)
+            )
+            test_loss, test_acc = self.model.evaluate(self.X_test, self.y_test)
+            mlflow.tensorflow.autolog()  # Logs the TensorFlow metrics automatically
+            mlflow.log_metric("test_loss", test_loss)
+            mlflow.log_metric("test_accuracy", test_acc)
+
+            time_now = str(datetime.datetime.now())
+            mlflow.tensorflow.save_model(self.model, f"model/{time_now}/")
+
+            mlflow.register_model(f"./model/{time_now}", name="cnn_model")
 
     def model_save(self):
         import os
         if not os.path.exists("models"):
             os.mkdir("models")
 
-        self.model.save("../models/cnn_mymodel.h5")
+        self.model.save("models/cnn_mymodel.h5")
         return self.model
 
 

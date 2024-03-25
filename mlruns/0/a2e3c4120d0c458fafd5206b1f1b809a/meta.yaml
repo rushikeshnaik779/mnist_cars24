@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/rushikeshnaik/Desktop/cars24_mnist_digit/mnist_cars24/mlruns/0/a2e3c4120d0c458fafd5206b1f1b809a/artifacts
+end_time: 1711350717265
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: a2e3c4120d0c458fafd5206b1f1b809a
+run_name: nervous-bass-95
+run_uuid: a2e3c4120d0c458fafd5206b1f1b809a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711350705231
+status: 4
+tags: []
+user_id: rushikeshnaik
