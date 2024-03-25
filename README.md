@@ -21,6 +21,7 @@ Folder Structure:
 - main.py: file runs to trigger the training pipeline.
 - requirements.txt : file to install all the dependecies
 - resources.txt: this file to keep the track of discoveries that I have during the development.
+- config: contains modelling and path level configs, we can also store hyper parameters after drift check to tweak the parameters. 
 
 Below are the steps to run the webapp using docker image: 
 - Clone the repository
@@ -76,6 +77,24 @@ Screenshot of Mlflow Dashboard:
 ### Model Registry: 
 
 ![Screenshot 2024-03-25 at 5 37 50 PM](https://github.com/rushikeshnaik779/mnist_cars24/assets/34379281/9a72cb99-05bc-4d93-88f3-ca8e45448a0d)
+
+
+# Area of Improvment : 
+
+Hi, I am here due to unavailability of my time, tried to cover as much as I can. Below are some points which I would like a mlops system should have, so it will be more robust.
+
+  - Drift Detections
+    - Model Drift
+    - Data Drift
+    - Prediction Drift
+    - Platform Drift.
+  - Unit testing
+  - Report generation
+  - Cloud Deployment
+  - CICD.
+  - Trigger/Schedule based retraining of a model.
+
+   
 
 
 
